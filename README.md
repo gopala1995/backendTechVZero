@@ -71,3 +71,32 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+
+## Deploying NestJS Application on AWS Lambda:
+Prepare your NestJS application:
+Ensure that your NestJS application is ready for deployment. Make sure all dependencies are installed and your application is properly configured.
+
+Sign up for AWS:
+If you haven't already, sign up for an AWS account (https://aws.amazon.com/).
+
+Install Serverless Framework:
+Install the Serverless Framework globally on your machine using npm or yarn:
+
+Copy code
+npm install -g serverless
+Configure AWS Credentials:
+Set up your AWS credentials on your local machine. You can do this by configuring AWS CLI or by setting environment variables.
+
+Prepare Serverless Configuration:
+Create a serverless.yml file in the root directory of your NestJS project. This file will contain configuration settings for deploying your application.
+
+Deploy your application:
+Run the following command to deploy your NestJS application to AWS Lambda:
+
+Copy code
+serverless deploy
+Serverless Framework will package and deploy your application to AWS Lambda based on the configuration provided in serverless.yml.
+
+Access your deployed application:
+Once the deployment is successful, Serverless Framework will provide you with the endpoint URL where your NestJS application is hosted on AWS Lambda.
